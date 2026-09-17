@@ -1,0 +1,16 @@
+:root {
+    --charcoal: #595959ff;
+    --grey: #7f7f7fff;
+    --silver: #a5a5a5ff;
+    --silver-2: #ccccccff;
+    --white-smoke: #f2f2f2ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/door.png);
+    background-repeat: repeat top right;
+}

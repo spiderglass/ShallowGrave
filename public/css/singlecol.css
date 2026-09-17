@@ -1,0 +1,136 @@
+/* user styles */
+
+/* styles are what change the color and sizes of stuff on your site. */
+
+/* these are variables that are being used in the code
+these tended to confuse some people, so I only kept
+the images as variables */
+
+:root {
+    --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
+    --body-bg-image: url('https://sadhost.neocities.org/images/tiles/purplesky.gif');
+    --darkest: #0a0a0a;
+    --mid-dark: #1a1a1a;
+    --mid: #4a3c2e;
+    --mid-light: #8b6b52;
+    --lightest: #c9a86c;
+}
+
+
+/*@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}*/
+
+body {
+    font-family: serif;
+    margin: 0;
+    background-color: var(--darkest);
+    background-size: 65px;
+    color: var(--mid);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    max-width: 600px;
+    /* if you change the above value, scroll to the bottom
+    and change the media query according to the comment! */
+    margin: 0 auto;
+}
+
+/* the area below is for all links on your page
+EXCEPT for the navigation */
+#container a {
+    color: var(--mid-light);
+    font-weight: bold;
+    text-decoration: none;
+}
+#container a:hover {
+    color: var(--lightest);
+    font-weight: bold;
+}
+#header {
+    width: 100%;
+    background-color: var(--mid);
+    /* header color here! */
+    height: 150px;
+    /* this is only for a background image! */
+    /* if you want to put images IN the header,
+    you can add them directly to the <div id="header"></div> element! */
+    background-size: 100%;
+}
+
+/* navigation section!! */
+#navbar {
+    height: 40px;
+    background-color: var(--darkest);
+    color: var(--lightest);
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0;
+}
+#navbar a {
+    color: var(--mid-light);
+    font-weight: 800;
+    text-decoration: none;
+}
+#navbar a:hover {
+    color: var(--mid-dark);
+    font-style: italic;
+}
+
+#flex {
+    display: block;
+}
+
+main {
+    background-color: var(--darkest);
+    flex: 1;
+    padding: 20px;
+    order: 2;
+}
+
+footer {
+    background-color: var(--darkest);
+    color: var(--mid-light);
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    /* this centers the footer text */
+}
+
+h1,
+h2,
+h3 {
+color: var(--mid-light);
+text-align: center;
+border-bottom: var(--lightest) solid 1px;
+}
+
+h1 {
+font-size: 25px;
+}
+
+strong {
+/* this styles bold text */
+color: var(--mid-light);
+}
+
+/* BELOW THIS POINT IS MEDIA QUERY */
+
+/* so you wanna change the width of your page?
+by default, the container width is 900px.
+in order to keep things responsive, take your new height,
+and then subtrack it by 100. use this new number as the
+"max-width" value below
+*/
+
+@media only screen and (max-width: 500px) {
+#flex {
+flex-wrap: wrap;
+}

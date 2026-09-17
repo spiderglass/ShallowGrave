@@ -1,0 +1,162 @@
+
+			:root {
+				--cream: rgb(255, 255, 204);
+				--light-pink: #ffcccc;
+				--mid-pink: #F2A6A8;
+				--dark-pink: #D86788;
+				--red: #741A1C;
+				--grey: #363230;
+
+				--border1: 1px solid #D86788;
+				--border2: 3px ridge #ffcccc;
+			}
+			
+			@font-face {
+				font-family: Ringbearer;
+				src: url('../fonts/Ringbearer.ttf');
+				}
+			* {
+				box-sizing: border-box;
+			}
+			body {
+				background-color: #000;
+				background-image: url('../images/SiteBack2.jpg');
+				background-attachment: scroll;
+				background-repeat: no-repeat;
+				background-size: auto;
+				font-family: Georgia, "Times New Roman", Times, serif;
+				color: #666;
+			}
+
+			#header {
+				background-image: url('../images/SiteTourHeader.jpg');
+				margin: 50px auto;
+				height: 135px;
+				width: 802px;
+				background-color: var(--light-pink);
+				border: var(--border1);
+				color: var(--red);
+			}
+
+			#container {
+				background-image: url('../images/Table2.jpg');
+				background-size: cover;
+				font-size: 14px;
+				margin: auto;
+				padding: 25px;
+				width: 802px;
+				height: 1000px;
+				box-sizing: border-box;
+				background-color: var(--grey);
+			}
+			
+			#menu {
+				margin: 25px auto;
+				padding: 5px 0 0 0;
+				width: 720px;
+				height: 76px;
+				background-color: var(--light-pink);
+				box-sizing: border-box;
+				border: var(--border2);
+				color: var(--red);
+				font-weight: bold;
+			}
+
+			#menu a {
+				color: var(--red);
+				text-decoration: none;
+				font-weight: bold;
+			}
+			#menu a:hover {
+				background-color: var(--dark-pink);
+				text-decoration: underline;
+				color: var(--grey);
+			}
+
+			#menu a:visited, a:hover{
+				color: var(--grey);
+			}
+
+			#mainsection {
+				margin: auto;
+				padding: 25px;
+				width: 720px;
+				height: 700px;
+				box-sizing:border-box;
+				background-color: var(--mid-pink);
+				border: var(--border2);
+				overflow-y: auto;
+				color: var(--grey);
+			}
+
+			#mainsection a {
+				color: var(--red);
+				text-decoration: none;
+				font-weight: bold;
+			}
+			#mainsection a:hover {
+				background-color: var(--dark-pink);
+				text-decoration: underline;
+				color: var(--grey);
+			}
+
+			#mainsection a:visited, a:hover{
+				color: var(--grey);
+			}
+			.heading1 {
+				text-align: center;
+			}
+			h1 {
+				display: inline;
+				order: 2;
+				font-family: Ringbearer;
+				color: var(--red);
+			}
+			h2 {
+				text-align: center;
+				color: var(--cream);
+				font-size: 14px;
+			}
+			.lscroll {
+				display: inline;
+				order: 1;
+			}
+			.rscroll {
+				display: inline;
+				order: 3;
+			}
+			.breakimg {
+				display: block;
+				margin: auto;
+			}
+			#outerfoot {
+				margin: 25px auto;
+				width: 720px;
+				height: 76px; 
+				background-color: var(--light-pink);
+				box-sizing: border-box;
+				border: var(--border2);
+			}
+			.innerfoot {
+				display: block;
+				margin: auto;
+				padding: 20px 15px 15px 15px;
+				box-sizing: border-box;
+				text-align: center;
+				color: var(--red);
+			}
+			.innerfoot a {
+				color: var(--red);
+				text-decoration: none;
+				font-weight: bold;
+			}
+			.innerfoot a:hover {
+				background-color: var(--dark-pink);
+				text-decoration: underline;
+				color: var(--grey);
+			}
+
+			.innerfoot a:visited {
+
+				color: var(--grey);
+			}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Shallow Grave</title>
+	<link href="/cross.css" media="all" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+	<div id="container">
+		<div class="box">
+			<h4>Can you hear me?</h4><button onclick="typeWriter()">Yes</button>
+			<p id="demo"></p>
+			<p><a href="main.html">Enter site</a></p>
+		</div>
+	</div>
+	<script>
+	var i = 0;
+	var txt = 'I think I came back wrong...';
+	var speed = 50;
+
+	function typeWriter() {
+	 if (i < txt.length) {
+	   document.getElementById("demo").innerHTML += txt.charAt(i);
+	   i++;
+	   setTimeout(typeWriter, speed);
+	 }
+	}
+	</script>
+</body>
+</html>

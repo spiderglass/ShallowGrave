@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code test</title>
+    
+      <!-- ////// This part is the CSS, it can be in the linked stylesheet or inline too but since this is in a <style> tag it has to be in the <head> area -->
+  <style>
+    #invisiblecontainer {
+      position: relative;
+      padding-top: 200px;
+      padding-left: 100px;
+      }
+    #bgimage {
+      position: absolute;
+      border: 3px solid green;
+      }
+    #text1 {
+      position: absolute;
+      font-size: 40px;
+      margin-top: -20px;
+      margin-left: 20px;
+      }
+    #text2 {
+      position: absolute;
+      color: red;
+      font-size: 30px;
+      margin-top: 240px;
+      margin-left: 500px;
+      }
+  </style>
+  
+  </head>
+  <body>
+  
+
+  
+  <!-- ////// The invisible container div is the box that all the position:absolute elements will position themselves based on (starting at the top left corner), because they are inside it.-->
+  <!-- ////// It's also used to position the whole thing within the page (or whatever element contains it)-->
+  <div id="invisiblecontainer">
+    <img id="bgimage" src="/hosting/FR/firnhat.png" width="600px" height="250px">
+    <span id="text1">Yahooo</span>
+    <span id="text2">Bing Bong</span>
+  </div>
+  
+  </body>
+</html>

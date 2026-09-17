@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Abaddon";
+  src: url("../fonts/Abaddon.TTF") format("truetype");
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #000;
+    color: grey;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+a:link {
+    color: #d3dfe4;
+}
+a:hover {
+    color: #6a6a6a;
+    background-color: transparent;
+    font-style: italic;
+}
+a:visited {
+    color: #6a6a6a;
+}
+
+h1, h2, h3{
+    color:#d3dfe4;
+    font-family: "Abaddon", serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+h1 {
+    letter-spacing: 5px;
+    margin-top: 15px;
+    text-shadow: 0 0 10px white;
+    text-transform: uppercase;
+    }
+h2 {
+    letter-spacing: 2px;
+    margin-top: 30px;
+    padding-bottom: 7px;
+    text-shadow: 0 0 5px white;
+    }
+
+p {
+    padding-bottom: 1em;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #a2aaae;
+    margin-top: 2em;
+    width: 100%;
+}
+/* == Scrollbar == */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #d3dfe4 rgba(239, 225, 196, 0);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+*::-webkit-scrollbar-track {
+    background: rgba(239, 225, 196, 0);
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #d3dfe4;
+    border-radius: 5px;
+    border: 0 solid #ffffff;
+}

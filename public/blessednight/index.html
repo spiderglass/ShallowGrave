@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+to do:
+- create header banner
+- make two column layout
+ -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blessed Night: an Emilie Autumn fansite</title>
+	<link rel="stylesheet" type="text/css" href="splash.css">
+	<style>
+		:root {
+			/* CSS HEX */
+			--vintage-berry: #823151ff;
+			--crimson-violet: #4c192dff;
+			--onyx: #000f08ff;
+			--antique-white: #faeadbff;
+			--rosy-granite: #919098ff;
+		}
+		@font-face {
+            font-family: Ruritania;
+            src: url(fonts/Ruritania.ttf);
+        }
+		@font-face {
+            font-family: UncleTypewriter;
+            src: url(fonts/uncletypewriter.TTF);
+        }
+
+		body {
+			align-items: center;
+			background-attachment: fixed;
+			background-image: url(scrapbook/pinkstripes.gif);
+			background-repeat: repeat;
+			background-size: contain;
+			display: flex;
+			justify-content: center;
+		}
+		.center {
+			height: 50%;
+			margin: 10% auto;
+			align-items: center;
+			position: relative;
+			width: 70%;
+			padding: 0.5em;
+		}
+		.enter {
+			position: absolute;
+			top: 45%;
+			left: 20%;
+			transform: translate(-50%, -50%);
+		}
+		a {
+			color: var(--antique-white);
+			text-decoration: none;
+			font-family: Ruritania;
+			font-size: 3em;
+		}
+		a:hover {
+			color: var(--vintage-berry);
+			font-style: italic;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="center">
+		<div class="flex-container">
+			<div class="container">
+				<img src="scrapbook/eabox.png" height="100%">
+				<div class="enter">
+					<a href="main.html">Enter</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

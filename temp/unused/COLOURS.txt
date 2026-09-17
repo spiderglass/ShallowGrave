@@ -1,0 +1,35 @@
+COLOURS:
+#6a6a6a
+#d3dfe4
+#a2aaae
+#a8b5c7
+#d8dee0
+#42500f
+#383838
+
+black
+white
+
+FONTS:
+Medieval Sharp, Abbadon
+
+HEADINGS:
+Medieval Sharp
+2px letter spacing
+#d3dfe4
+text shadow: 0 0 5px/10px white
+all uppercase
+
+EMPHAISIS: #a2aaae
+
+LINKS:
+normal: #a8b5c7
+hover: italic, text shadow 0 0 3px white
+visited: #d8dee0
+use background-colour: transparent; when on image background
+
+BORDERS:
+1px solid #a8b5c7
+
+BIG BOX SHADOW (CONTAINER):
+box-shadow: 0 0 30px rgba(255, 255, 255, 0.24);

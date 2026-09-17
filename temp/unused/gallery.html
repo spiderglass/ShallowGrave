@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Your Name"> <!-- EDIT ME! change "Your Name" to your name/username/author name for SEO purposes-->
+  <meta name="description" content="Describe your website here for SEO purposes!"> <!-- EDIT ME! only write within the quotations where it says "Describe...purposes!"-->
+
+  <!--stylesheet-->
+  <link rel="stylesheet" type="text/css" href="gallery.css">
+  <!--FONT FILES FOR ICON DO NOT TOUCH-->
+  <link href="assets/brands.css" rel="stylesheet">
+  <link href="assets/fontawesome.min.css" rel="stylesheet">
+
+<!-- EDIT ME! Change "My Site" below to whatever you're site is!-->
+  <title>My Site</title> 
+<!-- EDIT ME! PUT THE LINK TO THE ICON THAT WILL SHOW UP IN YOUR BROWSER TAB BELOW -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<body>
+  <nav> <!--Within the NAV tags, your links will live as list items within an unordered list-->
+    <ul>
+<!-- ***** TOP NAV BAR LINKS: Below is your navigation links!-->
+        <li><a href="#about">About Me</a></li><!-- EDIT ME! Links on page DO NOT TOUCH the #about within "" but you can change the words About Me between the a tags to About, Info, etc-->
+        <li><a href="#gallery">Gallery</a></li><!-- EDIT ME! Links on page DO NOT TOUCH the #gallery within "" but you can change the word Gallery between the a tags to Art, Works, etc-->
+        <li><a href="#links">Links</a></li><!-- EDIT ME! Links on page DO NOT TOUCH the #links within "" but you can change the word Links between the a tags to Socials, Elsewhere, etc-->
+    </ul>
+  </nav>
+  <main>
+    <div id="gallery">
+      <noscript>This site requires JavaScript to work properly. Please enable JavaScript or the gallery will not load.</noscript>
+        <div id="hideshow"> <!--everything within this div is hidden by default: we use javascript to show it-->
+            <img id="featureimg" src="images/blank.gif"> <!--do not modify the GIF in here-->
+            <h3 id="imgtitle"></h3>
+            <p id="imgdesc"></p>
+        </div> <!-- end #hideshow div-->
+        <div id="galleryItems">
+
+<!-- ADD IMAGES HERE YOU WILL ADD ALL IMAGES BETWEEN THIS COMMENT LINE AND THE CAP COMMENT LINE-->
+            <!-- EDIT ME! ALL IMAGES MUST BE STORED IN THE FOLDER LABELED IMAGES
+            You will type the RELATIVE PATH to each image you want to put in your gallery. This means that after every src= in the "" you will type images/your-image-name-here.filetype
+            
+            What you type must match the image you've uploaded into your images folder. You will need the images/ in the quotes: e.g. src="images/myimage.png"
+
+            Then you should type a title for your image in the "" following title= e.g. title="My Image"
+
+            If you want a description, type it in the "" following data-desc, OTHERWISE MAKE SURE YOU HAVE "" in the data-desc e.g. data-desc="This is a PNG of my image! This description will show up when you click me!"
+
+            If you're good about accessibility, you should add alt="alternative text".
+
+            IF YOU WANT TO SECTION OFF YOUR GALLERIES with a little heading, then inbetween the image of the LAST grouping and the image of hte FIRST grouping, write <h2>Whatever You're Calling This Area</h2>. It has already been styled for you.
+            -->
+            <img src="images/greengrad.jpg" title="Title: Green Gradient" data-desc="I am a description! You can use me to write a longer description or comment about your piece. Think like a tweet!" class="clickablepic" alt="a green gradient"> <!-- EDIT ME!  If you need more images, just copy everything from the first <img all the way to the closing > (or to the end of this line!)-->
+           
+          
+<!-- DON'T ADD ANY IMAGES BEYOND THIS LINE!!!!--->   
+        </div> <!--end small galleryItems image listing-->
+      </div>
+  </main>
+  <footer>
+    <section id="about">
+        <h1>About Me</h1> <!-- EDIT ME! -->
+        <!-- Whatever you want to write about yourself, put below!-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae enim ornare, venenatis sapien vitae, varius nibh. Donec nec magna eu metus ultrices tempor. Proin sed leo nibh. Ut sit amet blandit arcu, a consectetur magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin ut imperdiet nulla. Maecenas finibus purus et pretium ultricies. Nullam ut lorem a metus volutpat tempor non at velit. Aliquam id odio nec nisl imperdiet ultricies id at nulla. Maecenas iaculis nisi et risus lacinia, aliquam feugiat turpis cursus. Sed turpis mauris, dictum vel metus quis, accumsan malesuada risus. Vivamus eu diam id lacus pharetra aliquam at sit amet orci. Etiam magna justo, condimentum auctor porttitor vitae, venenatis vitae mauris. Praesent auctor eros dictum nunc pulvinar, eget porttitor neque dignissim. Quisque vulputate sagittis elit mattis luctus.</p> <!-- EDIT ME! If you want more paragraphs, wrap the sentences within <p></p> e.g. <p>Hello! I am a new paragraph!</p> -->
+    </section>
+    <section id="links">
+        <h2>Links and Social Media</h2>
+        <!-- EDIT ME! On the "" after each href= you should replace the # with the URL to your appropriate social media page. If you don't have one or don't want it, delete the entire line from opening <a> to closing </a> -->
+        <a href="#"><i class="fa-brands fa-twitter"></i></a> <!-- EDIT ME! -->
+        <a href="#"><i class="fa-brands fa-instagram"></i></a> <!-- EDIT ME! -->
+        <a href="#"><i class="fa-brands fa-tumblr"></i></a> <!-- EDIT ME! -->
+        <a href="#"><i class="fa-brands fa-facebook"></i></a> <!-- EDIT ME! -->
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a> <!-- EDIT ME! -->
+        <a href="#"><i class="fa-brands fa-twitch"></i></a> <!-- EDIT ME! -->
+       
+        <!-- any other social media links you want an icon for, go to https://fontawesome.com/search?o=a&f=brands and click on the icon, then copy the i class code they give -- the set up files already have the brand fontawesome icons in the asset folder. You'll type <a href="your url here"> and then COPY the i class code from the website followed by </a>
+        
+        You can also include any of the free solid icons: https://fontawesome.com/search?o=r&m=free just do same as above
+        -->
+
+    <!-- OTHER EXTERNAL LINKS -->
+        <!-- If you want to add any external links, you put the URL (http://blahblahblah...) in the "" following href= and where it says External Link 1 between the a tags, you put whatever text you want to show up -- e.g. <a href="https://www.google.com">Google Search</a> will show up as Google Search on your webpage. Put as many as you like.-->
+        <h3>Other Websites</h3> <!-- EDIT ME! Call this section whatever you want OR get rid of it by deleting this whole line. -->
+        <ul>
+            <li><a href="#">External Link 1</a></li> <!-- EDIT ME! -->
+            <li><a href="#">External Link 2</a></li> <!-- EDIT ME! -->
+            <!--if you want more pages to your website you could also make them here or make another section or something. This site it bare bones and geared more towards Basic Artist Gallery Functionality. If you do not want this part, delete from <ul> to </ul> -->
+        </ul>
+<!-- Don't Type or Delete Beyond This Point!-->
+    </section>
+  </footer>
+  <script src="script.js"></script> <!-- Don't touch! -->
+</body>
+</html>
