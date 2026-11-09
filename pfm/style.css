@@ -1,0 +1,206 @@
+/* Custom font */
+@font-face {
+  font-family: custom;
+  src: url(assets/bolina.woff);
+}
+/* Custom variables. Use var(--[variable name]) to use them. */
+:root {
+  --dark: #292a2c;
+  --light: #a39e8d;
+  --med: #5f5d53;
+  --med2: #434237;
+  --border: 1px solid var(--med2);
+}
+/* For text selection */
+::selection {
+  background-color: var(--med);
+  color: #000;
+}
+/* Structure */
+body {
+  background-color: var(--med2);
+  background-image: url(../public/webcraft/tiledbgs/brown_flowers.png);
+  background-size: auto;
+  background-repeat: repeat;
+  height: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.75em;
+}
+#container {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  max-width: 600px;
+  height: 600px;
+  padding: 15px;
+
+  background-color: var(--dark);
+  box-shadow: 0 0 50px var(--dark), 0 0 20px var(--dark), 0 0 10px var(--dark);
+  border-radius: 0px;
+  color: var(--light);
+}
+nav {
+  border-top: var(--border);
+  border-bottom: var(--border);
+  ul, li {
+    display: inline-block;
+    margin: 0;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    border-right: var(--border);
+    padding: 5px;
+    width: 105px;
+    text-align: center;
+  }
+  li:last-child {
+    border-right: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+footer {
+  border-top: var(--border);
+  padding-top: 10px;
+}
+main {
+  display: grid;
+  grid-template-columns: 25% 75%;
+
+  height: 480px;
+}
+/* Content inside of main. */
+#side, #main {
+  overflow: auto;
+  scrollbar-color: var(--med2) #303030;
+  scrollbar-width: thin;
+}
+#side {
+  border-right: var(--border);
+  section {
+    padding-right: 10px;
+  }
+}
+#main {
+  overflow: auto;
+  padding-bottom: 10px;
+  section {
+    padding-left: 10px;
+  }
+}
+section {
+  border-bottom: var(--border);
+}
+section:last-child {
+  border-bottom: none;
+}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+  color: var(--med);
+  text-shadow: 0 0 10px var(--med);
+  letter-spacing: 0.2em;
+}
+h1 {
+  font-family: custom;
+  font-size: 3em;
+  letter-spacing: 0.5em;
+  text-transform:none;
+
+  margin: 0;
+  margin-bottom: 20px;
+}
+/* Lists */
+ul, ol {
+  padding-left: 30px;
+}
+ul {
+  list-style: "♰  ";
+}
+ol {
+  list-style: upper-roman;
+}
+li::marker {
+  color: var(--med);
+}
+/* Details */
+details {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  padding: 10px;
+  border: var(--border);
+}
+summary {
+  cursor: pointer;
+  color: var(--med);
+}
+/* Tables */
+table {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+  text-align: left;
+  border: var(--border);
+  border-collapse: collapse;
+}
+th, td {
+  border: var(--border);
+  border-collapse: collapse;
+  padding: 5px;
+}
+th {
+  color: var(--med);
+}
+/* Text and text styling */
+p {
+  text-indent: 10px;
+}
+a, b, i, small, sup, sub {
+  color: var(--med);
+}
+a {
+  text-decoration: 1px var(--med) underline;
+}
+a:hover {
+  transition: 0.5s;
+  letter-spacing: 0.2em;
+}
+s {
+  text-decoration: 1px var(--med) line-through;
+}
+u {
+  text-decoration: 1px var(--med) underline;
+}
+
+/* Responsive */
+@media (max-width: 630px) {
+  body {
+    margin: 40px;
+  }
+  #container {
+    position: relative;
+    height: 900px;
+  }
+  header {
+    h1 {
+      font-size: 2em;
+    }
+  }
+  nav {
+    text-align: center;
+    li {
+      width: 40px;
+    }
+  }
+  main {
+    height: 790px;
+    grid-template-columns: 35% 65%;
+  }
+}

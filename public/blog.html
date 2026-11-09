@@ -15,6 +15,10 @@
     * {
        box-sizing: border-box;
     }
+    @font-face {
+      font-family: Invisible;
+      src: url(fonts/Invisible.ttf);
+    }
 
     body {
       background: var(--palette-1) url(img/paddock.png) no-repeat center;
@@ -22,9 +26,10 @@
 
     } 
     #container {
+      position: relative;
       margin: auto;
       padding: 20px;
-      width: 600px;
+      width: 100%;
     }
 
     #header, #content {
@@ -32,14 +37,47 @@
       border: var(--palette-3) 2px solid;
       border-radius: 5px;
       color: #807d75;
-      width: inherit;
+      margin: auto;
+      width: 600px;
     }
     #header {
       background: url(img/anim_light.gif) repeat top left;
+      color: #c4c2bb41;
+      font-family: Invisible;
+      font-size: 48px;
       text-align: center;
       height: 200px;
       margin-bottom: 20px;
     }
+    #moth {
+      float: left;
+    }
+    #moth a {
+      color: #807d75;
+    }
+    #moth a:hover {
+      background-color: #e8e1c4;
+    }
+    #moth a:active {
+      background-color: #e8e1c4;
+      color: #807d75;
+    }
+    #moth a:visited {
+      color: #e8e1c4;
+    }
+  #lcorner {
+    color: red;
+    position: absolute;
+    margin-top: -7px;
+    margin-left: -310px;
+  }
+
+  #rcorner {
+    color: green;
+    position: absolute;
+    margin-top: -7px;
+    margin-left: 205px;
+  }
     #content {
       margin: auto;
       padding: 20px;
@@ -49,9 +87,26 @@
 
 <body>
   <div id="container">
+    
+    <!--moth/link home-->
+    <span id="moth">
+      <a href="index.html">
+        <img id="whitemoth" src="img/whitemoth.png" height="50px">
+        <br>
+        Home
+      </a>
+    </span>
+    <!--header-->
     <div id="header">
-      <h1>Invisiblog</h1>
+      <span id="lcorner">
+        <img id="leftwing" src="img/lcorner.png" height="100px">
+      </span>
+      <span id="rcorner">
+        <img id="rightwing" src="img/rcorner.png" height="100px">
+      </span>
+      <h1 style="position: relative; margin-top: 50px;">Invisiblog</h1>
     </div>
+    <!--content-->
     <div id="content">
       <h3>04.09.26</h3>
       <p>Recently I started schema therapy with my psychologist. It's more then a little terrifying how quickly it's
